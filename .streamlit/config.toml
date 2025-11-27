@@ -11,6 +11,6 @@ backgroundColor = "#FFFDED"  # Very pale yellow/cream
 secondaryBackgroundColor = "#E3F5D8"  # Soft pastel green
 
 # Deep green text for contrast
-textColor = "#2E7D32"  # Dark leafy green
+textColor = "#023020"  # Dark leafy green
 
 font = "sans serif"
