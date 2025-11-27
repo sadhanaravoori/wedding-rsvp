@@ -133,7 +133,7 @@ with st.form("rsvp_form"):
 
 
 st.markdown(
-    "<h3 style='text-align: center;'>Venue: Chamara Vajra, Mukta</h3>",
+    "<h4 style='text-align: center;'>Venue: Chamara Vajra, Mukta</h3>",
     unsafe_allow_html=True
 )
 # [theme]
