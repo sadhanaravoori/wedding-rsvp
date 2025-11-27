@@ -103,7 +103,7 @@ def set_background(png_file):
 
 # Page title and introduction
 st.markdown("<h1 style='text-align: center;'>Wedding RSVP</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'>Vishrutha & Rohit</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Rohit & Vishrutha</h3>", unsafe_allow_html=True)
 st.markdown("<h6 style='text-align: center;'><i>We are excited to celebrate this special day with you!</i></h6>", unsafe_allow_html=True)
 
 # st.write("*We are excited to celebrate this special day with you!*")
