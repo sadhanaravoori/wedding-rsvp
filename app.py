@@ -45,8 +45,8 @@ def style_submit_button():
     custom_button_css = '''
     <style>
     div.stButton > button:first-child {
-        background-color: #F2E6F9;
-        color: #800080;
+        background-color: #C8E6C9; /* light green */
+        color: #2E7D32;            /* darker green text */
         border: none;
         padding: 10px 20px;
         font-size: 16px;
@@ -55,11 +55,13 @@ def style_submit_button():
         transition: background-color 0.3s;
     }
     div.stButton > button:first-child:hover {
-        background-color: #e4befa;
+        background-color: #FFEB3B; /* yellow hover */
+        color: #000000;            /* black text on yellow */
     }
     </style>
     '''
     st.markdown(custom_button_css, unsafe_allow_html=True)
+
 
     
 # Cache the base64 encoding of the binary file
@@ -131,3 +133,12 @@ with st.form("rsvp_form"):
 
 
 st.write("**Venue:** Chamara Vajra, Mukta")
+
+# [theme]
+# base="light"
+# primaryColor = "#A64DFF"  # Lighter purple for primaryColor
+# backgroundColor = "#F8F8F8"  # Off-white background color
+# #secondaryBackgroundColor = "#F2E6F9"  # Very light purple background color
+# secondaryBackgroundColor = "#ECE9F7"
+# textColor = "#800080"  # Purple text color
+# font = "sans serif"  # Font can be changed here
