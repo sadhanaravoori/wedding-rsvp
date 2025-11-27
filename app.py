@@ -58,7 +58,7 @@ div.stButton > button {
 
 st.markdown("""
 <style>
-div.stButton > button {
+div.stFormSubmitButton > button {
     font-size: 20px !important;
     border: 2px solid #023020 !important;  /* Dark green border */
     border-radius: 8px !important;         /* Optional: nicer rounded edges */
