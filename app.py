@@ -56,30 +56,15 @@ div.stButton > button {
 </style>
 """, unsafe_allow_html=True)
 
-def style_submit_button():
-    custom_button_css = '''
-    <style>
-    div.stButton > button:first-child {
-        background-color: #000000;
-        color: #FFF8E1;  /* cream text */
-        padding: 14px 26px;
-        font-size: 18px;
-        font-weight: 600;
-        border-radius: 10px;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 0 12px rgba(255, 235, 59, 0.5); /* yellow glow */
-        transition: 0.3s;
-    }
-    div.stButton > button:first-child:hover {
-        background-color: #45A049;
-        transform: scale(1.05);
-        box-shadow: 0 0 18px rgba(255, 235, 59, 0.8);
-        color: #000000; /* readable on hover yellow glow */
-    }
-    </style>
-    '''
-    st.markdown(custom_button_css, unsafe_allow_html=True)
+st.markdown("""
+<style>
+div.stButton > button {
+    font-size: 20px !important;
+    border: 2px solid #023020 !important;  /* Dark green border */
+    border-radius: 8px !important;         /* Optional: nicer rounded edges */
+}
+</style>
+""", unsafe_allow_html=True)
 
     
 # Cache the base64 encoding of the binary file
@@ -122,8 +107,6 @@ gsheet = gc.open("Wedding RSVP").worksheet("Sheet2")
 # Set background image
 set_background('background.png')
 
-# Apply button styling
-# style_submit_button()
 
 # RSVP form
 with st.form("rsvp_form"):
@@ -152,7 +135,7 @@ with st.form("rsvp_form"):
 
 
 st.markdown(
-    "<h4 style='text-align: center;'>Venue: Chamara Vajra, Mukta</h3>",
+    "<h4 style='text-align: center;'>Venue: Mukta, Chamara Vajra, Bangalore</h3>",
     unsafe_allow_html=True
 )
 # [theme]
