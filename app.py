@@ -58,17 +58,24 @@ div.stButton > button {
 
 st.markdown("""
 <style>
+/* Center the submit button container */
+div.stFormSubmitButton {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+/* Style the submit button */
 div.stFormSubmitButton > button {
-        background-color: #023020 !important; /* green bg */
-        color: #FFF8E1 !important;            /* cream text */
-        padding: 14px 26px !important;
-        font-size: 18px !important;
-        font-weight: 600 !important;
-        border-radius: 10px !important;
-        border: none !important;
-        cursor: pointer !important;
-        box-shadow: 0 0 12px rgba(255, 235, 59, 0.5) !important; /* yellow glow */
-        transition: all 0.3s ease !important;
+    background-color: #023020 !important; /* dark green */
+    color: #FFF8E1 !important;            /* cream text */
+    padding: 14px 26px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    border-radius: 10px !important;
+    border: none !important;
+    cursor: pointer !important;
+    box-shadow: 0 0 12px rgba(255, 235, 59, 0.5) !important; /* yellow glow */
+    transition: all 0.3s ease !important;
 }
 </style>
 """, unsafe_allow_html=True)
