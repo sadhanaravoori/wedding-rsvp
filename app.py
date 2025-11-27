@@ -132,8 +132,10 @@ with st.form("rsvp_form"):
             st.error("Please fill out all required fields.")
 
 
-st.write("**Venue:** Chamara Vajra, Mukta")
-
+st.markdown(
+    "<h3 style='text-align: center;'>Venue: Chamara Vajra, Mukta</h3>",
+    unsafe_allow_html=True
+)
 # [theme]
 # base="light"
 # primaryColor = "#A64DFF"  # Lighter purple for primaryColor
