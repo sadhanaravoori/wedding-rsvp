@@ -8,7 +8,7 @@ primaryColor = "#4CAF50"  # Leafy green
 backgroundColor = "#FFFDED"  # Very pale yellow/cream
 
 # Light mint secondary background
-secondaryBackgroundColor = "#E3F5D8"  # Soft pastel green
+secondaryBackgroundColor = "#000000"  # Soft pastel green
 
 # Deep green text for contrast
 textColor = "#023020"  # Dark leafy green
