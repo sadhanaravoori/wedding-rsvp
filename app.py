@@ -123,7 +123,7 @@ gsheet = gc.open("Wedding RSVP").worksheet("Sheet2")
 set_background('background.png')
 
 # Apply button styling
-style_submit_button()
+# style_submit_button()
 
 # RSVP form
 with st.form("rsvp_form"):
