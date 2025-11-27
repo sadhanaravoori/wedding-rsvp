@@ -129,9 +129,9 @@ with st.form("rsvp_form"):
     guests = st.number_input("**Number of Guests**", min_value=1, max_value=10, step=1)
     # st.write("**Reception** *14-December | 6:30PM onwards*")
     attend_both = st.checkbox("**Reception and Wedding**")
-    attend_reception = st.checkbox("**Reception** *[6-December-2025]*")
+    attend_reception = st.checkbox("**Reception** *[6th Dec 2025]*")
     # st.write("**Wedding** *15-December | 12:01PM Muhurthum*")
-    attend_wedding = st.checkbox("**Wedding**&nbsp;&nbsp;*[7-December-2025]*")
+    attend_wedding = st.checkbox("**Wedding**&nbsp;&nbsp;*[7th Dec, 2025]*")
 
     st.markdown("<hr style='margin-top:15px; margin-bottom:15;'>", unsafe_allow_html=True)
     
