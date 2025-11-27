@@ -60,7 +60,7 @@ def style_submit_button():
     custom_button_css = '''
     <style>
     div.stButton > button:first-child {
-        background-color: #4CAF50;
+        background-color: #000000;
         color: #FFF8E1;  /* cream text */
         padding: 14px 26px;
         font-size: 18px;
@@ -123,7 +123,7 @@ gsheet = gc.open("Wedding RSVP").worksheet("Sheet2")
 set_background('background.png')
 
 # Apply button styling
-# style_submit_button()
+style_submit_button()
 
 # RSVP form
 with st.form("rsvp_form"):
