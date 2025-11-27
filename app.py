@@ -56,28 +56,30 @@ div.stButton > button {
 </style>
 """, unsafe_allow_html=True)
 
-# Add custom CSS to style the submit button
 def style_submit_button():
     custom_button_css = '''
     <style>
     div.stButton > button:first-child {
-        background-color: #C8E6C9; /* light green */
-        color: #2E7D32;            /* darker green text */
+        background-color: #4CAF50;
+        color: #FFF8E1;  /* cream text */
+        padding: 14px 26px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
         border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        box-shadow: 0 0 12px rgba(255, 235, 59, 0.5); /* yellow glow */
+        transition: 0.3s;
     }
     div.stButton > button:first-child:hover {
-        background-color: #FFEB3B; /* yellow hover */
-        color: #000000;            /* black text on yellow */
+        background-color: #45A049;
+        transform: scale(1.05);
+        box-shadow: 0 0 18px rgba(255, 235, 59, 0.8);
+        color: #000000; /* readable on hover yellow glow */
     }
     </style>
     '''
     st.markdown(custom_button_css, unsafe_allow_html=True)
-
 
     
 # Cache the base64 encoding of the binary file
