@@ -40,6 +40,22 @@ hide_streamlit_style = """
                 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
+html, body, [class*="css"]  {
+    font-size: 22px !important;   /* Increase base font size */
+}
+
+label, .stTextInput label {
+    font-size: 22px !important;   /* Form label size */
+}
+
+div.stButton > button {
+    font-size: 22px !important;   /* Bigger submit button text */
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Add custom CSS to style the submit button
 def style_submit_button():
     custom_button_css = '''
