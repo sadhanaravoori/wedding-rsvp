@@ -85,7 +85,7 @@ def set_background(png_file):
 
 # Page title and introduction
 st.markdown("<h1 style='text-align: center;'>Wedding RSVP</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'>Sadhana & Vikas</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Vishrutha & Rohit</h3>", unsafe_allow_html=True)
 st.markdown("<h6 style='text-align: center;'><i>We are excited to celebrate this special day with you!</i></h6>", unsafe_allow_html=True)
 
 # st.write("*We are excited to celebrate this special day with you!*")
@@ -97,7 +97,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_dict(credentials_dict,
 gc = gspread.authorize(credentials)
 
 # Open the Google Sheet
-gsheet = gc.open("Wedding RSVP").sheet1
+gsheet = gc.open("Wedding RSVP").sheet2
 
 # Set background image
 set_background('background.png')
@@ -112,9 +112,9 @@ with st.form("rsvp_form"):
     guests = st.number_input("**Number of Guests**", min_value=1, max_value=10, step=1)
     # st.write("**Reception** *14-December | 6:30PM onwards*")
     attend_both = st.checkbox("**Reception and Wedding**")
-    attend_reception = st.checkbox("**Reception** *[14-December-2024]*")
+    attend_reception = st.checkbox("**Reception** *[6-December-2025]*")
     # st.write("**Wedding** *15-December | 12:01PM Muhurthum*")
-    attend_wedding = st.checkbox("**Wedding**&nbsp;&nbsp;*[15-December-2024]*")
+    attend_wedding = st.checkbox("**Wedding**&nbsp;&nbsp;*[7-December-2025]*")
     
     
     # Submit button
@@ -130,4 +130,4 @@ with st.form("rsvp_form"):
             st.error("Please fill out all required fields.")
 
 
-st.write("**Venue:** Poornima Convention Hall, Jayanagar, Bangalore")
+st.write("**Venue:** Chamara Vajra, Mukta")
