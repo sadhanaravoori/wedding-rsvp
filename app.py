@@ -59,7 +59,7 @@ div.stButton > button {
 st.markdown("""
 <style>
 div.stFormSubmitButton > button {
-        background-color: #4CAF50 !important; /* green bg */
+        background-color: #023020 !important; /* green bg */
         color: #FFF8E1 !important;            /* cream text */
         padding: 14px 26px !important;
         font-size: 18px !important;
