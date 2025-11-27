@@ -118,7 +118,7 @@ with st.form("rsvp_form"):
     # st.write("**Wedding** *15-December | 12:01PM Muhurthum*")
     attend_wedding = st.checkbox("**Wedding**&nbsp;&nbsp;*[7-December-2025]*")
 
-    st.markdown("<hr style='margin-top:25px; margin-bottom:10px;'>", unsafe_allow_html=True)
+    st.markdown("<hr style='margin-top:15px; margin-bottom:15;'>", unsafe_allow_html=True)
     
     # Submit button
     submitted = st.form_submit_button("Submit RSVP")
