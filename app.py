@@ -136,7 +136,10 @@ with st.form("rsvp_form"):
     st.markdown("<hr style='margin-top:15px; margin-bottom:15;'>", unsafe_allow_html=True)
     
     # Submit button
-    submitted = st.form_submit_button("**Submit RSVP**")
+    # Use columns for centering the button
+    col1, col2, col3 = st.columns([1, 1, 1])
+    with col2:
+        submitted = st.form_submit_button("**Submit RSVP**", use_container_width=True)
     
     if submitted:
         if name.strip():
