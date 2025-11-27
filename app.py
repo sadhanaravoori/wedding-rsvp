@@ -59,9 +59,16 @@ div.stButton > button {
 st.markdown("""
 <style>
 div.stFormSubmitButton > button {
-    font-size: 20px !important;
-    border: 2px solid #023020 !important;  /* Dark green border */
-    border-radius: 8px !important;         /* Optional: nicer rounded edges */
+        background-color: #4CAF50 !important; /* green bg */
+        color: #FFF8E1 !important;            /* cream text */
+        padding: 14px 26px !important;
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        border-radius: 10px !important;
+        border: none !important;
+        cursor: pointer !important;
+        box-shadow: 0 0 12px rgba(255, 235, 59, 0.5) !important; /* yellow glow */
+        transition: all 0.3s ease !important;
 }
 </style>
 """, unsafe_allow_html=True)
