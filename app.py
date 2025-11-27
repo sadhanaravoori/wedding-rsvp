@@ -5,7 +5,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 import base64
 
 # Streamlit application for Wedding RSVP
-st.set_page_config(page_title="Wedding RSVP", page_icon="❤️")
+st.set_page_config(page_title="Wedding RSVP", page_icon="💛")
 
 hide_streamlit_style = """
                 <style>
@@ -117,7 +117,8 @@ with st.form("rsvp_form"):
     attend_reception = st.checkbox("**Reception** *[6-December-2025]*")
     # st.write("**Wedding** *15-December | 12:01PM Muhurthum*")
     attend_wedding = st.checkbox("**Wedding**&nbsp;&nbsp;*[7-December-2025]*")
-    
+
+    st.markdown("<hr style='margin-top:25px; margin-bottom:10px;'>", unsafe_allow_html=True)
     
     # Submit button
     submitted = st.form_submit_button("Submit RSVP")
