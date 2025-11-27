@@ -123,7 +123,7 @@ gsheet = gc.open("Wedding RSVP").worksheet("Sheet2")
 set_background('background.png')
 
 # Apply button styling
-style_submit_button()
+# style_submit_button()
 
 # RSVP form
 with st.form("rsvp_form"):
@@ -139,7 +139,7 @@ with st.form("rsvp_form"):
     st.markdown("<hr style='margin-top:15px; margin-bottom:15;'>", unsafe_allow_html=True)
     
     # Submit button
-    submitted = st.form_submit_button("Submit RSVP")
+    submitted = st.form_submit_button("**Submit RSVP**")
     
     if submitted:
         if name.strip():
