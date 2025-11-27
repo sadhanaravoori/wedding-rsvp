@@ -43,15 +43,15 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown("""
 <style>
 html, body, [class*="css"]  {
-    font-size: 22px !important;   /* Increase base font size */
+    font-size: 20px !important;   /* Increase base font size */
 }
 
 label, .stTextInput label {
-    font-size: 22px !important;   /* Form label size */
+    font-size: 20px !important;   /* Form label size */
 }
 
 div.stButton > button {
-    font-size: 22px !important;   /* Bigger submit button text */
+    font-size: 20px !important;   /* Bigger submit button text */
 }
 </style>
 """, unsafe_allow_html=True)
